@@ -1,11 +1,117 @@
-<html>
-	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>akhof on github</title>
+		<meta charset="UTF-8"/>
+	
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="scripts/jquery.scrolly.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.parallax').scrolly({bgParallax: true});
+			});
+		</script>
+	
+		<style>
+			* {
+				font-family: "Segoe UI", Arial, Sans;
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				top: 0;
+				left: 0;
+			}
+			h1 {
+				font-size: 50px;
+			}
+			h2 {
+				font-size: 40px;
+			}
+			.section {
+				display: table;
+				overflow: hidden;
+				padding: 50px 0;
+				min-height: auto;
+				width: 100%;
+			}
+			.inner {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			#s0 {
+				color: #555555;
+				background-color: #eeeeee;
+				height: 250px;
+			}
+			#s1 {
+				color: #ffffff;
+				background-color: #1A9ED7;
+			}
+			#s2 {
+				color: #ffffff;
+				background-color: #555555;
+			}
+			#s3 {
+				color: #555555;
+				background-color: #eeeeee;
+			}
+			
+			
+			#s4 {
+				color: #ffffff;
+				background-color: #F9A539;
+			}
+			
+			.textbox {
+				margin: 0 100px 0 100px;
+				font-size:1.3em;
+				text-align:left;
+			}
+			
+			img {
+				margin: 5px 0 5px 50px;
+				float:right;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #ffffff;
+				font-weight: bold;
+			}
+			a:after {
+				content:"↑";
+			}
+		</style>
+
 	</head>
-	
-	<body>
-		<h1>lorem ipsum dolor set</h1>
+	<body>	
+		<div id="container">
+			<div id="s1" class="section">
+				<div id="i1" class="inner">
+					<h1>akhof on github</h1>
+					<div class="textbox">Click <b><a href="http://arnehannappel.de">here</a></b> to be redirect to my website...</div>
+					<div class="parallax" data-velocity="-.5">- akhof</div>
+				</div>
+			</div>
+		
+			<div id="s2" class="section">
+				<div id="i2" class="inner">
+					<h2>My projects</h2>
+					<div class="textbox">
+						<ul>
+							<li><b><a href="http://archery-competition-control.de">Archery Competition Control</b>  -  Archery Competition Control is a powerful software package to control archery traffic lights</li>
+							<li><b><a href="https://play.google.com/store/apps/details?id=de.simpliciter_vok.ferienkalender&hl=de">Ferienkalender</b>  -  The holiday calendar is a simple app for Android, which gives an overview of the holiday dates in Germany</li>
+							<li><b><a href="http://kabu-kassenbuch.de">KaBu-Kassenbuch</b>  -  KaBu is a program for easily creating cash books.</li>
+							<li><b><a href="http://simpliciter-vok.de">Simpliciter</b>  -  Simpliciter is a modern vocabulary trainer for easy learning of vocabulary</li>
+							<li><b><a href="http://arnehannappel.de">much more...</a></b></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+		</div>
 	</body>
-	
 </html>
